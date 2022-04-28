@@ -40,7 +40,12 @@ public class Production : NetworkBehaviour
 
     private void Update()
     {
-        moneyText.text = "Stored Money = €" + storedMoney;
+
+        if (moneyText != null)
+        {
+            moneyText.text = "Stored Money = €" + storedMoney;
+        }
+        
     }
 
     [Client]
