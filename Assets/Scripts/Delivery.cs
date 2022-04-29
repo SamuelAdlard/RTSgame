@@ -23,11 +23,11 @@ public class Delivery : NetworkBehaviour
     IEnumerator FindPlayer()
     {
         yield return new WaitForSeconds(0.1f);
-        print("Find player");
+        
         GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
         foreach (GameObject player in players)
         {
-            print(player.name);
+            
             if (player.GetComponent<Build>().team == gameObject.GetComponent<Unit>().team)
             {
                 teamPlayer = player;

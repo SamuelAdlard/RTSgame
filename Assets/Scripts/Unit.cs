@@ -13,6 +13,7 @@ public class Unit : NetworkBehaviour
     public string unitType = "Soldier";
     public Material[] materials;
     public GameObject model;
+    public GameObject manager;
 
     [ServerCallback]
     private void FixedUpdate()
@@ -36,8 +37,15 @@ public class Unit : NetworkBehaviour
     }
 
 
-
+    [ServerCallback]
     private void Awake()
+    {
+        manager = GameObject.Find("GameManager");
+        print("Add object unit side");
+        manager.GetComponent<Game>().AddObject(gameObject, team);
+    }
+    
+    private void Start()
     {
         StartCoroutine(TeamColour());
     }
@@ -51,4 +59,13 @@ public class Unit : NetworkBehaviour
         
         model.GetComponent<MeshRenderer>().material = materials[team];
     }
+
+    [ServerCallback]
+    private void OnDestroy()
+    {
+        manager.GetComponent<Game>().RemoveObject(gameObject, team);
+
+    }
+
+
 }
