@@ -183,7 +183,8 @@ MonoBehaviour:
   syncInterval: 0.1
   team: 2
   health: 20
-  maxHealth: 10
+  maxHealth: 20
+  garrisoned: 0
   walkableTag: Water
   unitType: Ship
   materials:
@@ -191,6 +192,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 1aa8201b463e9a04f8484bbdb8343a35, type: 2}
   - {fileID: 2100000, guid: 29414deff9c87ed41841883a31de7f04, type: 2}
   model: {fileID: 132638787567756792}
+  manager: {fileID: 0}
 --- !u!195 &4959676217919092380
 NavMeshAgent:
   m_ObjectHideFlags: 0

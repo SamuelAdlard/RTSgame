@@ -62,6 +62,8 @@ MonoBehaviour:
   damage: 1
   fireDelay: 2
   nextFire: 0
+  damageBonus: none
+  parentObject: {fileID: 1827645454308935342}
   gunBarrel: {fileID: 1894671179795679938}
   shoot: {fileID: 4760342621250380704, guid: 842f6f7f431f7fc478a8002f83ccdb10, type: 3}
 --- !u!54 &4361228908788789753
@@ -329,11 +331,15 @@ MonoBehaviour:
   team: 2
   health: 10
   maxHealth: 10
+  garrisoned: 0
+  walkableTag: Ground
+  unitType: Soldier
   materials:
   - {fileID: 2100000, guid: d7a8255ebdaf53b44a6cfa88900c812f, type: 2}
   - {fileID: 2100000, guid: 1aa8201b463e9a04f8484bbdb8343a35, type: 2}
   - {fileID: 2100000, guid: 29414deff9c87ed41841883a31de7f04, type: 2}
   model: {fileID: 835003013979452939}
+  manager: {fileID: 0}
 --- !u!114 &8213475009271916110
 MonoBehaviour:
   m_ObjectHideFlags: 0

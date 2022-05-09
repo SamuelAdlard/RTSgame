@@ -1231,6 +1231,10 @@ MonoBehaviour:
     m_Options:
     - m_Text: Transport Ship - 50
       m_Image: {fileID: 0}
+    - m_Text: Cargo Ship - 120
+      m_Image: {fileID: 0}
+    - m_Text: Battle Ship - 150
+      m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1652,6 +1656,7 @@ MonoBehaviour:
   team: 2
   health: 20
   maxHealth: 20
+  manager: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: d7a8255ebdaf53b44a6cfa88900c812f, type: 2}
   - {fileID: 2100000, guid: 1aa8201b463e9a04f8484bbdb8343a35, type: 2}
@@ -1686,16 +1691,20 @@ MonoBehaviour:
   placeableTag: Water
   units:
   - {fileID: 4959676217919092382, guid: 8cd046110aaf0d9489ccce2135bf50ce, type: 3}
-  prices: 32000000
+  - {fileID: 6879910705773837449, guid: bcfcb5c2b14f80e4d8eea10024d047e8, type: 3}
+  - {fileID: 7541913851585575405, guid: ebc6d25b1584c994a88286a186de7a13, type: 3}
+  prices: 320000007800000096000000
   point: {fileID: 3322626740517888102}
   pivot: {fileID: 3322626740092192416}
   dropdown: {fileID: 3322626741012885655}
-  moneyText: {fileID: 0}
+  moneyText: {fileID: 8089202312659117211}
   storedMoney: 0
-  maximumStorage: 400
+  maximumStorage: 500
   producing: 
   productionTimes:
   - 20
+  - 30
+  - 35
 --- !u!114 &3395933692452773146
 MonoBehaviour:
   m_ObjectHideFlags: 0

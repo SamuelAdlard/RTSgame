@@ -9,17 +9,22 @@ public class Soldier : MonoBehaviour
     public float fireDelay = 1;
     public float nextFire;
     public string damageBonus = "none";
-    
+    public GameObject parentObject;
     public Transform gunBarrel;
     public ParticleSystem shoot;
     [ServerCallback]
     private void OnTriggerEnter(Collider other)
     {
         
-        if (other.transform.CompareTag("Unit") && other.gameObject.GetComponent<Unit>().team != transform.parent.GetComponent<Unit>().team)
+        if (other.transform.CompareTag("Unit"))
         {
             
-            enemiesInRange.Add(other.gameObject);
+            if (other.gameObject.GetComponent<Unit>().team != parentObject.GetComponent<Unit>().team)
+            {
+                enemiesInRange.Add(other.gameObject);
+            }
+           
+            
         }
         else if (other.transform.CompareTag("Building") && other.GetComponent<Building>().team != transform.parent.GetComponent<Unit>().team)
         {

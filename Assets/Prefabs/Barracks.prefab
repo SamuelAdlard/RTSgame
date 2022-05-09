@@ -762,6 +762,8 @@ MonoBehaviour:
       m_Image: {fileID: 0}
     - m_Text: Builder - 40
       m_Image: {fileID: 0}
+    - m_Text: Truck - 50
+      m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1654,6 +1656,7 @@ MonoBehaviour:
   team: 2
   health: 20
   maxHealth: 20
+  manager: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: d7a8255ebdaf53b44a6cfa88900c812f, type: 2}
   - {fileID: 2100000, guid: 1aa8201b463e9a04f8484bbdb8343a35, type: 2}
@@ -1705,7 +1708,8 @@ MonoBehaviour:
   units:
   - {fileID: 1827645454308935342, guid: 9e8d43e187367d64a887ae12cbc31162, type: 3}
   - {fileID: 883129023828466567, guid: 982b3265876789c409d06fe5dd19d92d, type: 3}
-  prices: 1900000028000000
+  - {fileID: 6004691355911840197, guid: b6a664db3921587409f9f958d6b9f6c6, type: 3}
+  prices: 190000002800000032000000
   point: {fileID: 4192324192854632263}
   pivot: {fileID: 4192324192475070849}
   dropdown: {fileID: 4192324192359774134}
@@ -1716,6 +1720,7 @@ MonoBehaviour:
   productionTimes:
   - 10
   - 15
+  - 20
 --- !u!114 &4256658652171442747
 MonoBehaviour:
   m_ObjectHideFlags: 0
