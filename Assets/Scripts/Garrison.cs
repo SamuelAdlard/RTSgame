@@ -19,7 +19,7 @@ public class Garrison : MonoBehaviour
         
         foreach (GameObject unit in unitsInRange)
         {
-            if (numUnits < maxUnits)
+            if (numUnits < maxUnits && unit.GetComponent<Unit>().team == transform.parent.GetComponent<Unit>().team)
             {
                 garrisonedUnits.Add(unit);
                 numUnits++;

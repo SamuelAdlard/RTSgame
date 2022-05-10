@@ -26,7 +26,7 @@ public class Soldier : MonoBehaviour
            
             
         }
-        else if (other.transform.CompareTag("Building") && other.GetComponent<Building>().team != transform.parent.GetComponent<Unit>().team)
+        else if (other.transform.CompareTag("Building") && other.GetComponent<Building>().team != parentObject.GetComponent<Unit>().team)
         {
             
             
