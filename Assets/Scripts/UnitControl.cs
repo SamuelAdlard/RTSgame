@@ -66,10 +66,7 @@ public class UnitControl : NetworkBehaviour
     
     private void ClearSelection()
     {
-        for (int i = 0; i < selectedUnits.Count; i++)
-        {
-            selectedUnits.RemoveAt(0);
-        }
+        selectedUnits.Clear();
     }
 
     [Command]

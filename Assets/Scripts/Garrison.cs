@@ -68,10 +68,7 @@ public class Garrison : MonoBehaviour
                         unit.GetComponent<NavMeshAgent>().enabled = true;
                     }
 
-                    for (int a = 0; a < garrisonedUnits.Count; a++)
-                    {
-                        garrisonedUnits.RemoveAt(0);
-                    }
+                    garrisonedUnits.Clear();
                     return;
                 }
             }
