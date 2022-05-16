@@ -9,6 +9,7 @@ public class Soldier : MonoBehaviour
     public float fireDelay = 1;
     public float nextFire;
     public string damageBonus = "none";
+    public int bonusAmount = 2;
     public GameObject parentObject;
     public Transform gunBarrel;
     public ParticleSystem shoot;
@@ -54,7 +55,15 @@ public class Soldier : MonoBehaviour
                     {
                         if (hit.transform.CompareTag("Unit"))
                         {
-                            hit.transform.GetComponent<Unit>().health -= damage;
+                            if (hit.transform.GetComponent<Unit>().unitType == damageBonus)
+                            {
+                                hit.transform.GetComponent<Unit>().health -= damage + bonusAmount;
+                            }
+                            else
+                            {
+                                hit.transform.GetComponent<Unit>().health -= damage;
+                            }
+                            
                             
                         }
                         else if(hit.transform.CompareTag("Building"))

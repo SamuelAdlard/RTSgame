@@ -12,12 +12,11 @@ GameObject:
   - component: {fileID: 6317051796036405166}
   - component: {fileID: 8092504992825389924}
   - component: {fileID: 941332162843349165}
-  - component: {fileID: 442958133408390205}
   - component: {fileID: -2695234686753947815}
   - component: {fileID: -6805954540401760731}
-  - component: {fileID: 6628279961261636800}
   - component: {fileID: -120518977620303891}
   - component: {fileID: -1733097191057696254}
+  - component: {fileID: 1930533887720212020}
   m_Layer: 0
   m_Name: WindTurbine
   m_TagString: Building
@@ -105,19 +104,6 @@ MonoBehaviour:
   visible: 0
   m_AssetId: 1f2666e8426c71e45b1c3e2d12364ca5
   hasSpawned: 0
---- !u!65 &442958133408390205
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7732300242833445553}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.019521272, y: 0.014493722, z: 0.10726385}
-  m_Center: {x: -0.002958101, y: 0.00047301056, z: 0.043631997}
 --- !u!114 &-2695234686753947815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,6 +121,7 @@ MonoBehaviour:
   team: 2
   health: 10
   maxHealth: 10
+  manager: {fileID: 0}
   materials:
   - {fileID: 2100000, guid: d7a8255ebdaf53b44a6cfa88900c812f, type: 2}
   - {fileID: 2100000, guid: 1aa8201b463e9a04f8484bbdb8343a35, type: 2}
@@ -155,19 +142,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &6628279961261636800
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7732300242833445553}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.06, y: 0.06083347, z: 0.009939292}
-  m_Center: {x: -0.002958101, y: -0.0000000029802323, z: -0.005030287}
 --- !u!114 &-120518977620303891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -201,3 +175,16 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.003, y: 0, z: 0.056}
   m_TimeToStationary: 0.5
+--- !u!65 &1930533887720212020
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7732300242833445553}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.019521274, y: 0.060833473, z: 0.13199352}
+  m_Center: {x: -0.002958101, y: -0.0000000027939673, z: 0.05599676}

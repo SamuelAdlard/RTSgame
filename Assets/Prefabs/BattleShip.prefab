@@ -345,7 +345,8 @@ MonoBehaviour:
   damage: 5
   fireDelay: 5
   nextFire: 0
-  damageBonus: none
+  damageBonus: Soldier
+  bonusAmount: -2
   parentObject: {fileID: 7541913851585575405}
   gunBarrel: {fileID: 7466388571034118514}
   shoot: {fileID: 4760342621250380704, guid: 842f6f7f431f7fc478a8002f83ccdb10, type: 3}
@@ -597,7 +598,8 @@ MonoBehaviour:
   damage: 5
   fireDelay: 5
   nextFire: 0
-  damageBonus: none
+  damageBonus: Soldier
+  bonusAmount: -2
   parentObject: {fileID: 7541913851585575405}
   gunBarrel: {fileID: 797183790988139201}
   shoot: {fileID: 4760342621250380704, guid: 842f6f7f431f7fc478a8002f83ccdb10, type: 3}

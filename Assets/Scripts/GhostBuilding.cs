@@ -29,6 +29,7 @@ public class GhostBuilding : NetworkBehaviour
             enteredCollider = other;
         }
     }
+
     [Client]
     private void OnCollisionEnter(Collision collision)
     {
